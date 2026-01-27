@@ -43,13 +43,13 @@ mvn clean install
      <filter class="solr.CJKBigramFilterFactory" han="true" hiragana="true" katakana="true" hangul="true" outputUnigrams="true" />
    </analyzer>
  </fieldType>
- 
+
  ## Checking example locally
- 
+
  (Uses Ruby)
- 
+
  Install Ruby dependencies
- 
+
  ```sh
  $ bundle install
  ```
@@ -82,3 +82,11 @@ $ curl http://127.0.0.1:8983/solr/test/select?debugQuery=on&indent=on&q=cjk_test
 $ curl http://127.0.0.1:8983/solr/test/select?debugQuery=on&indent=on&q=cjk_test:南洋&wt=json
 
 ```
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
